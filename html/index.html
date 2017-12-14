@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+			crossorigin="anonymous"></script>
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
+	<title>SecureON Program</title>
+</head>
+<body>
+<div class="container">
+	<div class="dropdown">
+		<button class="btn btn-primary btn-block dropdown-toggle drop" type="button" data-toggle="dropdown">Choose program
+			<span class="caret"></span></button>
+		<ul class="dropdown-menu">
+			<li><button class="btn btn-primary btn-block dropik"  data-toggle="modal" href="#first">First prog</button></li>
+			<li><button class="btn btn-primary btn-block dropik" data-toggle="modal" href="#second">Second prog</button></li>
+		</ul>
+	</div>
+	<div id="first" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">First prog</h4>
+				</div>
+				<div class="modal-body">
+					<img src="css/img/first.png">
+					<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+							<div id="menu">
+								<div class="menu">
+									<ul>
+										<li><a href="<?php echo BEZ_HOST; ?>facebookreg/?mode=auth">Log In</a></li>
+										<li><a href="<?php echo BEZ_HOST; ?>facebookreg/?mode=reg">Sign Up</a></li>
+									</ul>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div style="clear: left"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="second" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Second prog</h4>
+				</div>
+				<div class="modal-body">
+					<img src="css/img/second.jpeg">
+					<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+							<div id="menu">
+								<div class="menu">
+									<ul>
+										<li><a href="<?php echo BEZ_HOST; ?>facebookreg/?mode=auth">Log In</a></li>
+										<li><a href="<?php echo BEZ_HOST; ?>facebookreg/?mode=reg">Sign Up</a></li>
+									</ul>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div style="clear: left"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+			<div style="clear:both;"></div>
+			<div id="content">
+				<?php echo $content; ?>
+			</div>
+		</div>
+	</body>
+</html>

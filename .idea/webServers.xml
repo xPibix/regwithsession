@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8b44496c-87e9-4bbd-b74f-520f6cede810" name="secure" url="http://secureon.co.il:2082/">
+        <fileTransfer host="secureon.co.il" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="2f9ca28b-655f-4c63-9208-f8188d31f8a4" name="reg" url="http://31.31.196.213">
+        <fileTransfer host="31.31.196.213" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
